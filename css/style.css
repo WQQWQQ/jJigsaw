@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #cccccc;
+    font-family: cursive,"Microsoft Yahei", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+    color: inherit;
+}
+pre{
+    padding: 10px;
+    border: 1px dashed #101010;
+    overflow: auto;
+}
+
+/*header start*/
+header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.jigsawletter{
+    display: inline-block;
+    margin: 50px 0;
+    min-width: 170px;
+    min-height: 170px;
+    text-align: center;
+    font-size: 5em;
+    line-height: 150px;
+    line-height: 170px\9;
+    *line-height: 150px;
+    _line-height: 150px;
+    text-shadow: 2px 5px rgba(100, 100, 100, 0.5);
+}
+.letter-j{
+    background-color: #11aaff;
+}
+.letter-J{
+    background-color: #f9bb56;
+}
+.letter-i{
+    background-color: #f434a1;
+}
+.letter-g{
+    background-color: #2cf18d;
+}
+.letter-s{
+    background-color: #b338f8;
+}
+.letter-a{
+    background-color: #f43a1f;
+}
+.letter-w{
+    background-color: #f5f015;
+}
+
+* + html .jigsawletter {
+    display: inline;
+    zoom: 1;
+}
+
+* html .jigsawletter {
+    display: inline;
+    zoom: 1;
+}
+/*header end*/
+
+/*intro start*/
+#intro{
+    text-align: center;
+    width: 600px;
+    padding: 50px 50px;
+    margin: 50px auto;
+    max-width: 70%;
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#intro>h2{
+    margin: 30px 50px;
+    font-size: 2em;
+}
+#intro a{
+    line-height: 20px;
+    font-size: 0.5em;
+    display: block;
+    width: 50px;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fbfbfb;
+    border: 1px solid #959595;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+#intro a:hover{
+    background-color: #c8c8c8;
+}
+/*intro end*/
+
+/*maincontent start*/
+.maincontent>div{
+    width: 80%;
+    max-width: 80%;
+    padding: 100px 0;
+    margin: 50px auto;
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.maincontent h2{
+    font-family: cursive,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+}
+.maincontent h2,.maincontent p,.maincontent pre,.maincontent h3,.maincontent h4{
+    margin: 0 15% 10px 15%;
+}
+.maincontent p{
+    font-family: "Microsoft Yahei",sans-serif;
+}
+/*feature start*/
+
+.feature h2{
+    color: #11A7FC;
+    font-size: 3em;
+}
+strong.highlight{
+    color: #11A7FC;
+}
+/*feature end*/
+
+/*hello world start*/
+
+.helloworld h2,.helloworld h3{
+    color:#29dd80 ;
+}
+.helloworld h2{
+    font-size: 3em;
+}
+span.elemid{
+    font-size: 0.9em;
+    color: #29dd80;
+}
+/*hello world end*/
+
+/*download start*/
+.download h2{
+    color:#f5f015 ;
+    font-size: 3em;
+}
+.linkcon{
+    text-align: center;
+}
+.downloadlink{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#f5f015 ;
+    margin: 0 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom: dashed 1px #222222;
+}
+.downloadlink:hover{
+    background-color: #fffa15;
+}
+/*download end*/
+
+/*documentation start*/
+.documentation h2{
+    color:#dda450 ;
+    font-size: 3em;
+}
+.documentation h3,.documentation h4{
+    color:#dda450 ;
+}
+/*documentation end*/
+
+/*about start*/
+.about h2,.about h3,.about a{
+    color:#dd328e ;
+}
+.about h2{
+    font-size: 3em;
+}
+.about a:hover{
+    color: #fa33a6;
+    font-weight: bold;
+}
+/*about end*/
+/*maincontent end*/

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jJigsaw</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jJigsaw.js"></script>
+    <script>
+        $(function(){
+            $(".jigsawletter").jJigsaw({
+                holerate:5,
+                bdcolor:"#AAAAAA",
+                bdwidth:3
+            });
+            $("#intro").jJigsaw({
+                holerate:9,
+                bdcolor:"#AAAAAA"
+            });
+            $(".feature,.helloworld,.download,.documentation,.about").jJigsaw({
+                holerate:10,
+                bdcolor:"#AAAAAA"
+            });
+        })
+    </script>
+</head>
+<body>
+<header>
+    <div>
+        <div class="jigsawletter letter-j">j</div>
+        <div class="jigsawletter letter-J">J</div>
+        <div class="jigsawletter letter-i">i</div>
+        <div class="jigsawletter letter-g">g</div>
+        <div class="jigsawletter letter-s">s</div>
+        <div class="jigsawletter letter-a">a</div>
+        <div class="jigsawletter letter-w">w</div>
+    </div>
+</header>
+<div id="intro">
+    <h2><span>A jQuery plugin to make your elements look like a jigsaw</span><a href="#">Github</a></h2>
+</div>
+<div class="maincontent">
+    <div class="feature">
+        <h2>Features</h2>
+        <p>jJigsaw is a jQuery plugin to create a <strong class="highlight">jigsaw effect</strong> on an element,which is useful for stylishness.</p>
+        <p>It mainly uses <strong class="highlight">CSS border tricks</strong> and <strong class="highlight">position tricks</strong> to achieve the effect, without using any image,
+            which enables us to create this kind of effect of any size.</p>
+        <p>It's a tiny library with minified JavaScript file of <strong class="highlight">6KB</strong>.</p>
+    </div>
+    <div class="helloworld">
+        <h2>Hello World!</h2>
+        <p>To use jCorner, the following files should always be included.</p>
+    <pre>
+        &lt;script src="jquery.min.js" type="text/javascript">&lt;/script>
+        &lt;script src="jJigsaw.js" type="text/javascript">&lt;/script></pre>
+        <p>Suppose we want to add this jigsaw effect to an element with id <span class="elemid">jigsaw</span> in the HTML, jJigsaw makes it as simple as:</p>
+        <h3>HTML:</h3>
+    <pre>
+        &lt;div id="jigsaw">&lt;/div></pre>
+        <h3>JavaScript:</h3>
+    <pre>
+        $('#paper').jJigsaw();</pre>
+    </div>
+    <div class="download">
+        <h2>Download</h2>
+        <p>jJigsaw is an open-source project under MIT License.</p>
+        <div class="linkcon">
+            <a href="#" class="downloadlink">View at Github</a>
+            <a href="#" class="downloadlink">Download jJigsaw.js</a>
+            <a href="#" class="downloadlink">Download jJigsaw.min.js</a>
+        </div>
+    </div>
+    <div class="documentation">
+        <h2>Documentation</h2>
+        <p>There're 4 parameters to set with jJigsaw, none of which is compulsory. Default values are:</p>
+        <pre>
+            bgcolor:"#ffffff",
+            bdcolor:"#cccccc",
+            bdwidth:5,
+            holerate:8</pre>
+        <p>If your web page had set the background-color property of body element,jJigsaw will set the same color value
+            of the bgcolor parameter automatically.</p>
+        <h4>Example:</h4>
+        <pre>
+            $("#jigsaw").jJigsaw({
+            holerate:7,
+            bdcolor:"#AAAAAA"
+            });</pre>
+        <pre>
+            $("#jigsaw").jJigsaw({
+            holerate:5,
+            bdcolor:"#cccccc",
+            bdwidth:3
+            });</pre>
+        <h3>bgcolor</h3>
+        <p>In order to make your elements have this jigsaw effect,you had better ensure the bgcolor parameter is set to
+            be the same value of your elements' container.</p>
+        <h3>bdcolor</h3>
+        <p>This parameter defines your elements' shadow effect,bdcolor is set to be the shadow's color.</p>
+        <h3>bdwidth</h3>
+        <p>You may want to control the size of shadow in pixels,that's exactly what this parameter do.</p>
+        <h3>holerate</h3>
+        <p>Well,I have to admit that it's hard for me to explain the usage of this parameter.The larger it is ,
+            the smaller the holes of your jigsaw it will be.</p>
+        <h2>P.S.</h2>
+        <p>If your element have child element,you had better set some CSS properties such as margin for a better effect.
+            Besides,if you have set the background-image property for your element,please do as follows: </p>
+        <pre>
+            #jigsaw{
+                background:url(bg.jpg) no-repeat 0 0;
+                background-size:100% 100%;
+            }</pre>
+        <p>Not humanized,huh? I have done my best whatever.</p>
+        <p>If you have other problems during the time you using jJigsaw,feel free to get in touch with me.</p>
+    </div>
+    <div class="about">
+        <h2>About Author</h2>
+        <p>jJigsaw is developed by Quincy Wu, a hobbyist Web front-end designer.</p>
+        <h3>Follow Him</h3>
+        <p>Follow him on <a href="#">Sina Weibo</a> or <a href="#">Google Plus</a></p>
+    </div>
+</div>
+
+
+</body>
+</html>
